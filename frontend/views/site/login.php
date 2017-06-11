@@ -11,7 +11,10 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1>
+        <?php echo Yii::t('app', 'Форма') ?>
+
+    </h1>
 
     <p>Please fill out the following fields to login:</p>
 
