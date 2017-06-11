@@ -31,13 +31,28 @@ class Languages
             Yii::$app->language = $match_arr[2];
             Yii::$app->formatter->locale = $match_arr[2];
             Yii::$app->homeUrl = '/' . $match_arr[2];
+            Yii::$app->session->set('selected_language', $match_arr[2] );
         }
         //if language doesn't exist, get default language
         else {
-            preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
-            Yii::trace('urlmatch', $match_arr[2]);
+            $selected_lang = Yii::$app->session->get('selected_language');
+            Yii::trace('selected_lang', $selected_lang );
+            if($selected_lang != null) {
+                Yii::trace('urlmatch', $selected_lang);
+                Yii::$app->language = $selected_lang;
+                Yii::$app->formatter->locale = $selected_lang;
+                Yii::$app->homeUrl = '/' . $selected_lang;
+                preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
+
+            }
+
+
+            /*preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
+            Yii::trace('urlmatch', $selected_lang );
             $lang = self::$default_language;
-           Yii::$app->response->redirect(['site/'.$match_arr[2], 'lang' => $lang]);
+
+            Yii::$app->response->redirect(['site/'.$match_arr[2], 'lang' => $lang]);*/
+
         }
 
 

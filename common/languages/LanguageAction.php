@@ -31,14 +31,19 @@ class LanguageAction extends \yii\base\Action
 
       $list_languages = Languages::$url_language; //list of languages
 
-        preg_match("#^(http:\/\/\w+\.\w+)/($list_languages)(.*)#",$url_referrer, $match_arr);
+      preg_match("#^(http:\/\/\w+\.\w+)/($list_languages)(.*)#",$url_referrer, $match_arr);
 
         // Replacement of the language identifier
         $match_arr[2] = '/'.$language;
         // create new URL
         $url = $match_arr[1].$match_arr[2].$match_arr[3];
 
-        Yii::trace('url',$match_arr[3] );
+        Yii::trace('url',$match_arr[2] );
+
+
+
+
+
 
         Yii::$app->response->redirect($url);
     }
