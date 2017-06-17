@@ -62,6 +62,10 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'language' => [
+                'class' => 'common\languages\LanguageAction',
+            ],
+
         ];
     }
 
@@ -72,6 +76,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
@@ -209,5 +214,15 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionBlogsingle()
+    {
+        return $this->render('blogsingle');
     }
 }
