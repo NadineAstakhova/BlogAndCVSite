@@ -121,6 +121,22 @@ a.desc:after {
     outline: none;
 }
 
+.languages a {
+    color: #989595;
+}
+
+.languages a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.pull-right i{
+    color:#989595;
+    padding-right: 6px;
+    font-size: 18px;
+}
+
+
 
 
 

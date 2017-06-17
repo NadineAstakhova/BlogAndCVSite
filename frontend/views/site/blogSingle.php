@@ -18,7 +18,7 @@
         <div class="nk-blog-post nk-blog-post-single">
 
             <h1 class="display-4">Title</h1>
-          
+
 
 
             <div class="nk-post-meta">

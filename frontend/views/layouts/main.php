@@ -73,9 +73,16 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
+        <p class="pull-right" style="padding-top: 13px">
+            <a href="https://www.facebook.com/nadine.astakhova"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/nadine-astakhova-015547b0/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/NadineAstakhova"><i class="fa fa-github"></i></a>
+        </p>
         <?= $this->render('//includes/language') ?>
 
+
         <p class="pull-left">&copy; Nadine Astakhova <?= date('Y') ?></p>
+
 
 
     </div>

@@ -7766,6 +7766,7 @@ blockquote.nk-blockquote-style-1 cite {
         width: 49%;
         top: auto
     }
+
 }
 
 @media (max-width:543px) {
@@ -7776,6 +7777,11 @@ blockquote.nk-blockquote-style-1 cite {
     .nk-carousel .nk-carousel-next .nk-carousel-arrow-name,
     .nk-carousel .nk-carousel-prev .nk-carousel-arrow-name {
         font-size: 1rem
+    }
+    .pull-right i{
+        font-size:10px;
+        color:#989595;
+        padding-right: 3px;
     }
 }
 
@@ -7795,6 +7801,9 @@ blockquote.nk-blockquote-style-1 cite {
     .nk-carousel-2 .flickity-slider>div {
         width: 50%;
         opacity: .6
+    }
+    .pull-right i{
+        font-size:20px;
     }
 }
 
@@ -7828,6 +7837,9 @@ blockquote.nk-blockquote-style-1 cite {
 @media (max-width:1199px) {
     .nk-carousel-2.nk-carousel-x2 .flickity-slider>div {
         width: 33.3334%
+    }
+    .pull-right i{
+        font-size:20px;
     }
 }
 
