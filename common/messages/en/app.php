@@ -7,9 +7,10 @@
  */
 
 return [
-    'Блог' => 'Blog',
     'О нас' => 'About',
     'Контакты' => 'Contact',
     'Поздравляем' =>'Congratulations',
-    'Форма' =>'Login'
+    'Форма' =>'Login',
+    'Главная' => 'Main',
+    'Блог' => 'Blog',
 ];

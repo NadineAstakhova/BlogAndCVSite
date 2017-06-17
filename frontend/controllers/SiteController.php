@@ -215,4 +215,14 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionBlogsingle()
+    {
+        return $this->render('blogsingle');
+    }
 }
