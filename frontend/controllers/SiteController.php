@@ -217,7 +217,17 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays about page.
+     * Displays blog page.
+     *
+     * @return mixed
+     */
+    public function actionBlog()
+    {
+        return $this->render('blog');
+    }
+
+    /**
+     * Displays blog post page.
      *
      * @return mixed
      */
