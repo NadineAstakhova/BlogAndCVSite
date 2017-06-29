@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background-image: url("../images/fon1.png");
 }
 
 details,
@@ -803,6 +804,10 @@ code {
     .col-lg-2{
         padding-bottom: 5px
     }
+    .info{
+        font-size: 16px;
+        text-align: center;
+    }
 
 }
 
@@ -981,6 +986,24 @@ code {
         padding-right: 15px;
         padding-left: 15px
     }
+    .info {
+        font-size: 20px;
+        display: block;
+
+     }
+    .info-all{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 60px;
+        padding: 0;
+
+    }
+
+
+
 }
 
 .col-xs-1 {
@@ -1389,6 +1412,11 @@ code {
     .offset-md-11 {
         margin-left: 91.666667%
     }
+
+    .info {
+        font-size: 18px;
+        padding-left: 60px;
+    }
 }
 
 @media (min-width:992px) {
@@ -1517,6 +1545,19 @@ code {
     }
     .offset-lg-11 {
         margin-left: 91.666667%
+    }
+    .info {
+        font-size: 20px;
+    }
+    .info-all{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 60px;
+        padding: 0;
+
     }
 }
 
@@ -5133,9 +5174,20 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 
-p {
-    margin-bottom: 1.6rem
+.info p{
+    margin-bottom: 6px;
 }
+
+.info {
+    color: black;
+    text-align: left;
+}
+
+p {
+
+}
+
+
 
 b,
 strong {
@@ -5426,6 +5478,9 @@ h4 {
 @media (max-width:543px) {
     .nk-img-fit-xs-down {
         max-width: 100%
+    }
+    .info{
+        text-align: center;
     }
 }
 
@@ -8964,6 +9019,7 @@ a:hover>.nk-icon-search:after {
 .breadcrumb > .active{
     color: #000;
 }
+
 
 
 .nk-blog-isotope .nk-blog-post .nk-post-thumb {
