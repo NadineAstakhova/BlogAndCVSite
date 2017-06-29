@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="nk-post-thumb">
                         <a href="blog-single.html">
+
                             <img src="../../images/partner-logo-6-dark.png" alt="" class="nk-img-stretch">
                         </a>
 

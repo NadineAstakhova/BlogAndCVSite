@@ -78,6 +78,7 @@ class SiteController extends Controller
     {
         $language = Yii::$app->language; //текущий язык
         //выводим вид соответствующий текущему языку
+
         return $this->render('index-'.$language);
 
 
