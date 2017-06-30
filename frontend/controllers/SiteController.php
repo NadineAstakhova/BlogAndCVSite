@@ -239,4 +239,20 @@ class SiteController extends Controller
     {
         return $this->render('blogsingle');
     }
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionCv()
+    {
+        $language = Yii::$app->language; //текущий язык
+        //выводим вид соответствующий текущему языку
+
+        return $this->render('cv-'.$language);
+
+
+    }
+
 }
