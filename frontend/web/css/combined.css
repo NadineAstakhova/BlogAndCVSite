@@ -995,16 +995,21 @@ code {
         text-align: left;
 
      }
-    .info-all{
-
+    .info-all, .info-cv{
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        margin-top: 60px;
         padding: 0;
 
     }
+    .info-all{
+        margin-top: 60px;
+    }
+    .info-cv{
+        width: 100%;
+    }
+
 
 
 
@@ -1555,15 +1560,19 @@ code {
         font-size: 20px;
         text-align: left;
     }
-    .info-all{
-
+    .info-all, .info-cv{
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        margin-top: 60px;
         padding: 0;
 
+    }
+    .info-all{
+        margin-top: 60px;
+    }
+    .info-cv{
+        width: 100%;
     }
 }
 
