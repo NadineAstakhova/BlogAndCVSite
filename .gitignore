@@ -34,5 +34,4 @@ phpunit.phar
 # vagrant runtime
 /.vagrant
 
-/files/CV_Nadine_Astakhova.docx
-/files/резюме_Астахова_Надежда.docx
+/files
