@@ -254,5 +254,11 @@ class SiteController extends Controller
 
 
     }
+    public function actionDownload($name)
+    {
+        $path = Yii::getAlias('/basic') . '/uploads';
+        $file = $path.'/'.$name;
+        return \Yii::$app->response->sendFile(Yii::$app->basePath.'\uploads\\'.basename($name));
+    }
 
 }
