@@ -9049,7 +9049,7 @@ a:hover>.nk-icon-search:after {
     opacity: .6
 }
 
-.nk-blog-isotope .nk-blog-post .nk-post-category a {
+.nk-blog-isotope .nk-blog-post .nk-post-category a, .download-cv {
     display: inline-block;
     background-color: #252525;
     text-transform: uppercase;
@@ -9062,11 +9062,19 @@ a:hover>.nk-icon-search:after {
     padding: 5.5px 15px;
     min-width: 90px;
     color: #fff;
-    float:right;
     transition: background-color .5s
 }
 
-.nk-blog-isotope .nk-blog-post .nk-post-category a:hover {
+.download-cv:hover, .download-cv:focus{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nk-blog-isotope .nk-blog-post .nk-post-category a{
+    float:right;
+}
+
+.nk-blog-isotope .nk-blog-post .nk-post-category a:hover{
     background-color: #393939
 }
 

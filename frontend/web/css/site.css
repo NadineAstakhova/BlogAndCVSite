@@ -179,15 +179,25 @@ a.desc:after {
     background-color: black;
 }
 
-.cv-education{
-    background-color: white;
+.cv-education, .cv-skills{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 10px;
 }
 
-.cv-education h4{
+.cv-education h4, .cv-skills h4{
     text-align: center;
     color: #5f5f5f;
 }
 
+.cv-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cv-but{
+    padding-top: 10px;
+    text-align: center;
+}
 
 
 
