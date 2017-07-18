@@ -5,6 +5,8 @@
  * Date: 30.06.2017
  * Time: 18:33
  */
+use yii\bootstrap\Html;
+
 $this->title = 'CV';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -99,7 +101,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 <ul>
                     <li>Russian (Native)</li>
                     <li>Ukrainian (Native)</li>
-                    <li>English (В1) <a href="#">Certificate </a> </li>
+                    <li>English (В1)
+                        <?php
+                            echo Html::a(Yii::t('app', 'Certificates'), ['download', 'name' => 'certificates_British_Council.pdf']);
+                        ?>
+                    </li>
                 </ul>
                 Also I can speak a little:
                 <ul>
@@ -119,8 +125,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 <span class="cv-title">Will be </span>
             </div>
             <div  class="cv-but">
-                <a href="#" class="download-cv">Скачать Русское CV</a>
-                <a href="#" class="download-cv">Download CV English</a>
+                <?php
+                    echo Html::a(Yii::t('app', 'Скачать Русское CV'), ['download', 'name' => 'CV_Nadine_Astakhova_Ru.pdf'],
+                        ['class' =>'download-cv']);
+
+                    echo Html::a(Yii::t('app', 'Download CV English'), ['download', 'name' => 'CV_Nadine_Astakhova.pdf'],
+                        ['class' =>'download-cv']);
+                ?>
             </div>
         </div>
     </div>

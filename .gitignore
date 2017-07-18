@@ -34,4 +34,6 @@ phpunit.phar
 # vagrant runtime
 /.vagrant
 
-/files
+
+/frontend/files
+
