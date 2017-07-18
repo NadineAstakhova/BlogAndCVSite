@@ -9069,6 +9069,9 @@ a:hover>.nk-icon-search:after {
     text-decoration: none;
     color: #fff;
 }
+.download-cv {
+    margin-right: 5px;
+}
 
 .nk-blog-isotope .nk-blog-post .nk-post-category a{
     float:right;
