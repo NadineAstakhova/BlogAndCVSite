@@ -10,7 +10,7 @@ use yii\bootstrap\Html;
 $this->title = 'CV';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="row">
+<div class="row" id="cv-education">
     <div class="info-cv">
         <div class="col-lg-8" >
             <div class="cv-education">
@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row" id="cv-skills">
     <div class="info-cv">
         <div class="col-lg-8" >
             <div class="cv-skills">
@@ -92,7 +92,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row"  id="cv-oskills">
     <div class="info-cv">
         <div class="col-lg-8" >
             <div class="cv-skills">
@@ -117,7 +117,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row" id="cv-exp">
     <div class="info-cv">
         <div class="col-lg-8" >
             <div class="cv-skills">
