@@ -188,6 +188,9 @@ a.desc:after {
     text-align: center;
     color: #5f5f5f;
 }
+#cv-education, #cv-skills, #cv-oskills, #cv-exp{
+    display:none;
+}
 
 .cv-title{
     font-size: 18px;
