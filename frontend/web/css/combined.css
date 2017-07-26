@@ -555,6 +555,9 @@ code {
         padding-right: 15px;
         padding-left: 15px
     }
+    .download-cv{
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width:768px) {
@@ -1294,6 +1297,9 @@ code {
     }
     .offset-sm-11 {
         margin-left: 91.666667%
+    }
+    .download-cv{
+        margin-bottom: 5px;
     }
 }
 
@@ -5394,6 +5400,9 @@ h4 {
         margin-top: 60px;
         margin-bottom: 60px
     }
+    .download-cv{
+        margin-bottom: 5px;
+    }
 }
 
 .text-main-1 {
@@ -5495,6 +5504,9 @@ h4 {
     }
     .info{
         text-align: center;
+    }
+    .download-cv{
+        margin-bottom: 5px;
     }
 }
 
@@ -9068,6 +9080,9 @@ a:hover>.nk-icon-search:after {
 .download-cv:hover, .download-cv:focus{
     text-decoration: none;
     color: #fff;
+}
+.download-cv {
+    margin-right: 5px;
 }
 
 .nk-blog-isotope .nk-blog-post .nk-post-category a{

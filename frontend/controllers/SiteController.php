@@ -258,7 +258,7 @@ class SiteController extends Controller
     {
         $path = Yii::getAlias('/basic') . '/uploads';
         $file = $path.'/'.$name;
-        return \Yii::$app->response->sendFile(Yii::$app->basePath.'\uploads\\'.basename($name));
+        return \Yii::$app->response->sendFile(Yii::$app->basePath.'\files\cv\\'.basename($name), basename($name),  ['inline'=>true]);
     }
 
 }

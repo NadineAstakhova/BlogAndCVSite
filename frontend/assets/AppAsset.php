@@ -18,6 +18,7 @@ class AppAsset extends AssetBundle
 
     ];
     public $js = [
+        'scripts/animation.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
