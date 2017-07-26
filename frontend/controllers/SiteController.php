@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\ListPost;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -227,7 +228,13 @@ class SiteController extends Controller
      */
     public function actionBlog()
     {
-        return $this->render('blog');
+
+      //  print_r($post->getPosts());
+        $post = new ListPost();
+
+        return $this->render('blog', [
+            'posts' => $post->getPostsLang(),
+        ]);
     }
 
     /**

@@ -23,6 +23,14 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <div class="col-lg-8" >
         <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-1-cols">
+            <?php
+
+            foreach ($posts as $post){
+                echo $post['title'];
+            }
+            ?>
+
+
             <!-- START: Post -->
             <div class="nk-isotope-item" data-filter="Nature">
                 <div class="nk-blog-post">
