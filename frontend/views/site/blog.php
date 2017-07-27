@@ -23,60 +23,40 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <div class="col-lg-8" >
         <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-1-cols">
-            <?php
 
-            foreach ($posts as $post){
-                echo $post['title'];
-            }
-            ?>
 
 
             <!-- START: Post -->
             <div class="nk-isotope-item" data-filter="Nature">
                 <div class="nk-blog-post">
+                    <?php
+                    foreach ($posts as $post){
+                        header('Content-Type: text/html; charset=UTF-8');
+                        echo "<h2 class=\"nk-post-title h4\">". $post['title'] . "</h2>";
+                        echo "<div class=\"nk-post-date\">";
+                       // echo date('M d Y', strtotime($post['create_date']));
+                        echo $post['create_date'];
+                        echo " <a href='#'>".$post['category']."</a>";
+                        echo "</div>";
+                        echo "<div class=\"nk-post-text\">";
+                        $string = iconv('CP1251', 'UTF-8', file_get_contents($post['text']));
+                        echo "<p>".strstr($string, '</p>', true)."</p>";
+                        echo " <div class=\"nk-post-category\"><a href=\"#\">".Yii::t('app','Читать далее')."</a></div>";
+                        echo "</div>";
 
-                    <h2 class="nk-post-title h4"><a href="blog-single.html">Something I need to tell you</a></h2>
+                    }
+                    ?>
 
-                    <div class="nk-post-date">
-                        September 18, 2016 <a href="#">Java</a>
-                    </div>
-                    <div class="nk-post-thumb">
-                        <a href="blog-single.html">
 
-                            <img src="../../images/partner-logo-6-dark.png" alt="" class="nk-img-stretch">
-                        </a>
 
-                    </div>
 
-                    <div class="nk-post-text">
-                        <p>Gathering stars deep he For above open morning fruit blessed, void. Sea seed fruit were don't, days man second. In day isn't own Whales also evening it together.</p>
-                        <div class="nk-post-category"><a href="#"><?php echo Yii::t('app','Читать далее');?></a></div>
 
-                    </div>
+
+
+
                 </div>
             </div>
-            <div class="nk-isotope-item" data-filter="Nature">
-                <div class="nk-blog-post">
 
-                    <h2 class="nk-post-title h4"><a href="blog-single.html">Something I need to tell you</a></h2>
-
-                    <div class="nk-post-date">
-                        September 18, 2016 Other
-                    </div>
-                    <div class="nk-post-thumb">
-                        <a href="blog-single.html">
-                            <img src="../../images/partner-logo-6-dark.png" alt="" class="nk-img-stretch">
-                        </a>
-
-                    </div>
-
-                    <div class="nk-post-text">
-                        <p>Gathering stars deep he For above open morning fruit blessed, void. Sea seed fruit were don't, days man second. In day isn't own Whales also evening it together.</p>
-                        <div class="nk-post-category"><a href="#"><?php echo Yii::t('app','Читать далее');?></a></div>
-
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- END: Post -->
     </div>
