@@ -32,7 +32,8 @@ class ListPost extends \yii\db\ActiveRecord
             ->join('LEFT OUTER JOIN', 'lang', 'post_text.fkLang = lang.idLang')
             ->join('LEFT OUTER JOIN', 'post', 'post_text.fkPost = post.idPost')
             ->join('LEFT OUTER JOIN', 'categories', 'post.fkCategory = categories.idCategory')
-            ->where(['lang.name'=>$language]);
+            ->where(['lang.name'=>$language])
+            ->andWhere(['post.blOrPort'=> '2']);
 
         $command = $query->createCommand();
         $posts = $command->QueryAll();
@@ -49,6 +50,8 @@ class ListPost extends \yii\db\ActiveRecord
     private function getLangPosts()
     {
     }
+
+
 
 
 }
