@@ -10,6 +10,8 @@ namespace frontend\controllers;
 
 
 use frontend\models\ListPost;
+use frontend\models\Post;
+use yii\web\NotFoundHttpException;
 
 class PostController extends \yii\web\Controller
 {
@@ -22,6 +24,15 @@ class PostController extends \yii\web\Controller
         ]);
 
     }
+
+    public function actionArticle($idArticle){
+        $model = new Post($idArticle);
+        return $this->render('article', [
+             'model' => $model,
+        ]);
+    }
+
+
 
 
 }

@@ -5,6 +5,10 @@
  * Date: 21.06.2017
  * Time: 14:22
  */
+
+
+use yii\helpers\Html;
+
 $this->title = 'Blog';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -41,8 +45,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo "<div class=\"nk-post-text\">";
                         $string = iconv('CP1251', 'UTF-8', file_get_contents($post['text']));
                         echo "<p>".strstr($string, '</p>', true)."</p>";
-                        echo " <div class=\"nk-post-category\"><a href=\"#\">".Yii::t('app','Читать далее')."</a></div>";
-                        echo "</div>";
+                        echo " <div class=\"nk-post-category\">";
+                        echo Html::a(Yii::t('app', Yii::t('app','Читать далее')),
+                            ['post/article', 'idArticle' =>$post['idPText']]);
+                        echo "</div></div>";
 
                     }
                     ?>
