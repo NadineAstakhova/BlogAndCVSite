@@ -157,6 +157,11 @@ textarea {
     font: inherit
 }
 
+.nk-blog-post-single{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 20px;
+}
+
 @media print {
     *,
      :after,
@@ -8559,7 +8564,8 @@ a:hover>.nk-icon-search:after {
 }
 
 .nk-isotope.nk-isotope-gap .nk-isotope-item {
-    padding: 15px
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 .container-fluid .nk-isotope {
@@ -8993,7 +8999,7 @@ a:hover>.nk-icon-search:after {
 }
 
 .nk-blog-isotope .nk-blog-post, .categories-post {
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .03)
 }
 .nk-blog-isotope .nk-blog-post{
@@ -9011,7 +9017,7 @@ a:hover>.nk-icon-search:after {
 }
 
 .category-list li {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid rgb(199, 199, 199);
     padding: 5px 0;
 }
 .category-list a {
