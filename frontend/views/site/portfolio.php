@@ -9,7 +9,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Blog';
+$this->title = 'Portfolio';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -31,10 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
             <!-- START: Post -->
-            <div class="nk-isotope-item" data-filter="Nature">
-                <div class="nk-blog-post">
+
+
                     <?php
                     foreach ($posts as $post){
+                        echo " <div class=\"nk-isotope-item\"><div class=\"nk-blog-post\">";
                         header('Content-Type: text/html; charset=UTF-8');
                         echo "<h2 class=\"nk-post-title h4\">". $post['title'] . "</h2>";
                         echo "<div class=\"nk-post-date\">";
@@ -48,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         echo " <div class=\"nk-post-category\">";
                         echo Html::a(Yii::t('app', Yii::t('app','Читать далее')),
                             ['post/article', 'idArticle' =>$post['idPText']]);
-                        echo "</div></div>";
+                        echo " </div></div></div></div>";
 
                     }
                     ?>
@@ -60,8 +61,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-                </div>
-            </div>
+
+
 
         </div>
         <!-- END: Post -->
