@@ -11,6 +11,7 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
+    'language' =>'ru',
     'sourceLanguage' => 'ru', // использован в качестве ключей переводов
     'bootstrap' => ['log'],
 

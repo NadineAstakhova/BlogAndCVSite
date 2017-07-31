@@ -42,11 +42,11 @@ class Languages
                 Yii::$app->language = $selected_lang;
                 Yii::$app->formatter->locale = $selected_lang;
                 Yii::$app->homeUrl = '/' . $selected_lang;
-                preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
-
+                Yii::trace('homeUrl', Yii::$app->homeUrl);
             }
 
 
+          //  preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
             /*preg_match("#^/(\w+/\w+/\w+)/(\w+)(.*)#", $url, $match_arr);
             Yii::trace('urlmatch', $selected_lang );
             $lang = self::$default_language;

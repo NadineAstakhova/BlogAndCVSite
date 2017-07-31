@@ -7,7 +7,11 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background: url("../images/fon4.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 details,
@@ -151,6 +155,11 @@ textarea {
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit
+}
+
+.nk-blog-post-single{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 20px;
 }
 
 @media print {
@@ -551,6 +560,9 @@ code {
         padding-right: 15px;
         padding-left: 15px
     }
+    .download-cv{
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width:768px) {
@@ -803,6 +815,10 @@ code {
     .col-lg-2{
         padding-bottom: 5px
     }
+    .info{
+        font-size: 16px;
+        text-align: center;
+    }
 
 }
 
@@ -981,6 +997,30 @@ code {
         padding-right: 15px;
         padding-left: 15px
     }
+    .info {
+        font-size: 20px;
+        display: block;
+        text-align: left;
+
+     }
+    .info-all, .info-cv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+
+    }
+    .info-all{
+        margin-top: 60px;
+    }
+    .info-cv{
+        width: 100%;
+    }
+
+
+
+
 }
 
 .col-xs-1 {
@@ -1263,6 +1303,9 @@ code {
     .offset-sm-11 {
         margin-left: 91.666667%
     }
+    .download-cv{
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width:768px) {
@@ -1388,6 +1431,12 @@ code {
     }
     .offset-md-11 {
         margin-left: 91.666667%
+    }
+
+    .info {
+        font-size: 18px;
+        padding-left: 60px;
+        text-align: center;
     }
 }
 
@@ -1517,6 +1566,24 @@ code {
     }
     .offset-lg-11 {
         margin-left: 91.666667%
+    }
+    .info {
+        font-size: 20px;
+        text-align: left;
+    }
+    .info-all, .info-cv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+
+    }
+    .info-all{
+        margin-top: 60px;
+    }
+    .info-cv{
+        width: 100%;
     }
 }
 
@@ -5133,9 +5200,19 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 
-p {
-    margin-bottom: 1.6rem
+.info p{
+    margin-bottom: 6px;
 }
+
+.info {
+    color: black;
+}
+
+p {
+
+}
+
+
 
 b,
 strong {
@@ -5328,6 +5405,9 @@ h4 {
         margin-top: 60px;
         margin-bottom: 60px
     }
+    .download-cv{
+        margin-bottom: 5px;
+    }
 }
 
 .text-main-1 {
@@ -5426,6 +5506,12 @@ h4 {
 @media (max-width:543px) {
     .nk-img-fit-xs-down {
         max-width: 100%
+    }
+    .info{
+        text-align: center;
+    }
+    .download-cv{
+        margin-bottom: 5px;
     }
 }
 
@@ -8478,7 +8564,8 @@ a:hover>.nk-icon-search:after {
 }
 
 .nk-isotope.nk-isotope-gap .nk-isotope-item {
-    padding: 15px
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 .container-fluid .nk-isotope {
@@ -8912,7 +8999,7 @@ a:hover>.nk-icon-search:after {
 }
 
 .nk-blog-isotope .nk-blog-post, .categories-post {
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .03)
 }
 .nk-blog-isotope .nk-blog-post{
@@ -8930,7 +9017,7 @@ a:hover>.nk-icon-search:after {
 }
 
 .category-list li {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid rgb(199, 199, 199);
     padding: 5px 0;
 }
 .category-list a {
@@ -8947,7 +9034,7 @@ a:hover>.nk-icon-search:after {
 .category-list li:hover a {color: #9C9C9C;}
 
 .breadcrumb{
-    background-color: #f9f9f9;
+    background-color: transparent;
     margin-bottom: 12px;
     font-family: "Calibri Light","Tahoma", sans-serif;
     font-size: 21px;
@@ -8966,6 +9053,7 @@ a:hover>.nk-icon-search:after {
 }
 
 
+
 .nk-blog-isotope .nk-blog-post .nk-post-thumb {
     position: relative;
     margin: 20px
@@ -8979,7 +9067,7 @@ a:hover>.nk-icon-search:after {
     opacity: .6
 }
 
-.nk-blog-isotope .nk-blog-post .nk-post-category a {
+.nk-blog-isotope .nk-blog-post .nk-post-category a, .download-cv {
     display: inline-block;
     background-color: #252525;
     text-transform: uppercase;
@@ -8992,11 +9080,22 @@ a:hover>.nk-icon-search:after {
     padding: 5.5px 15px;
     min-width: 90px;
     color: #fff;
-    float:right;
     transition: background-color .5s
 }
 
-.nk-blog-isotope .nk-blog-post .nk-post-category a:hover {
+.download-cv:hover, .download-cv:focus{
+    text-decoration: none;
+    color: #fff;
+}
+.download-cv {
+    margin-right: 5px;
+}
+
+.nk-blog-isotope .nk-blog-post .nk-post-category a{
+    float:right;
+}
+
+.nk-blog-isotope .nk-blog-post .nk-post-category a:hover{
     background-color: #393939
 }
 

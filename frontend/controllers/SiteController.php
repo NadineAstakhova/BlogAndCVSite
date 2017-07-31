@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\ListPost;
+use frontend\models\Post;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -78,6 +80,7 @@ class SiteController extends Controller
     {
         $language = Yii::$app->language; //текущий язык
         //выводим вид соответствующий текущему языку
+
         return $this->render('index-'.$language);
 
 
@@ -224,9 +227,15 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionBlog()
+    public function actionPortfolio()
     {
-        return $this->render('blog');
+
+      //  print_r($post->getPosts());
+        $post = new ListPost();
+
+        return $this->render('portfolio', [
+            'posts' => $post->getPostsLang(),
+        ]);
     }
 
     /**
@@ -238,4 +247,29 @@ class SiteController extends Controller
     {
         return $this->render('blogsingle');
     }
+
+
+
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionCv()
+    {
+        $language = Yii::$app->language; //текущий язык
+        //выводим вид соответствующий текущему языку
+
+        return $this->render('cv-'.$language);
+
+
+    }
+    public function actionDownload($name)
+    {
+        $path = Yii::getAlias('/basic') . '/uploads';
+        $file = $path.'/'.$name;
+        return \Yii::$app->response->sendFile(Yii::$app->basePath.'\files\cv\\'.basename($name), basename($name),  ['inline'=>true]);
+    }
+
 }

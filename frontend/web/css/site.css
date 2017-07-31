@@ -15,12 +15,11 @@ body {
 }
 
 .footer {
-    background-color: #000000;
-    border-top: 1px solid #ddd;
+    background-color: rgba(118, 132, 138, 0.42);
     padding-top: 20px;
 }
 .pull-left{
-    color: #989595;
+    color: #FFFFFF;
 }
 
 .jumbotron {
@@ -122,18 +121,85 @@ a.desc:after {
 }
 
 .languages a {
-    color: #989595;
+    color: #FFFFFF;
 }
 
 .languages a:hover {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .pull-right i{
-    color:#989595;
+    color:#FFFFFF;
     padding-right: 6px;
     font-size: 18px;
+}
+
+
+.navbar-inverse{
+    background-color: rgba(236, 227, 220, 0.52);
+    border: none;
+
+}
+
+.navbar-inverse .navbar-brand{
+    color: black;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #696969;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: white;
+    background-color: rgba(195, 191, 188, 0.4);
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: rgba(195, 191, 188, 0.3);
+    color: #7d137d;
+}
+
+.navbar-inverse .navbar-toggle{
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus{
+    background-color: rgba(195, 191, 188, 0.4);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: black;
+}
+
+.cv-education, .cv-skills{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 10px;
+}
+
+.cv-education h4, .cv-skills h4{
+    text-align: center;
+    color: #5f5f5f;
+}
+#cv-education, #cv-skills, #cv-oskills, #cv-exp{
+    display:none;
+}
+
+.cv-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cv-but{
+    padding-top: 10px;
+    text-align: center;
 }
 
 
