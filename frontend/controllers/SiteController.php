@@ -227,15 +227,22 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionPortfolio()
+    public function actionPortfolio($filter = null)
     {
 
       //  print_r($post->getPosts());
         $post = new ListPost();
 
-        return $this->render('portfolio', [
-            'posts' => $post->getPostsLang(),
-        ]);
+        if ((isset($filter))) {
+            return $this->render('portfolio', [
+                'posts' => $post->getPostsByFilter($filter),
+                'filter' => $filter,
+            ]);
+        }
+        else
+            return $this->render('portfolio', [
+                'posts' => $post->getPostsLang(),
+            ]);
     }
 
     /**
@@ -271,5 +278,7 @@ class SiteController extends Controller
         $file = $path.'/'.$name;
         return \Yii::$app->response->sendFile(Yii::$app->basePath.'\files\cv\\'.basename($name), basename($name),  ['inline'=>true]);
     }
+
+
 
 }
