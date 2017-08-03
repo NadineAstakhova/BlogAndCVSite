@@ -7,6 +7,8 @@
  */
 
 
+use yii\helpers\Html;
+
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => 'Portfolio', 'url' => ['site/portfolio']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -18,9 +20,25 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="categories-post">
             <span class="categories-title">Categories:</span>
             <ul class="category-list">
-                <li><a href="#">JAVA</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Other</a></li>
+                <li>
+                    <?= Html::a(
+                        'JAVA',
+                        ['site/portfolio?filter=java']
+                    ) ?>
+
+                </li>
+                <li>
+                    <?= Html::a(
+                        'PHP',
+                        ['site/portfolio?filter=php']
+                    ) ?>
+                </li>
+                <li>
+                    <?= Html::a(
+                        'Other',
+                        ['site/portfolio?filter=other']
+                    ) ?>
+                </li>
             </ul>
         </div>
     </div>
