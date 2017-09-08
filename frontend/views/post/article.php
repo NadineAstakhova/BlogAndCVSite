@@ -48,17 +48,20 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- START: Post -->
         <div class="nk-blog-post nk-blog-post-single">
 
-            <h1 class="display-4"><?php  echo $model->title; ?></h1>
+            <h2 class="display-4"><?php  echo $model->title; ?></h2>
 
             <div class="nk-post-meta">
                 <div class="nk-post-date"><?php echo $model->date;?></div>
-                <div class="nk-post-category"><?php echo $model->category;?></div>
+                <div class="nk-post-category"><?= Html::a(
+                        $model->category,
+                        ['site/portfolio?filter='.$model->category]
+                    ) ?></div>
                 <div class="nk-post-comments-count"><?php echo $model->author;?></div>
             </div>
 
 
             <!-- START: Post Text -->
-            <div class="nk-post-text">
+            <div class="nk-post-text" align="justify">
                 <?php
                     $article = iconv('CP1251', 'UTF-8', file_get_contents($model->text));
                     echo $article;
