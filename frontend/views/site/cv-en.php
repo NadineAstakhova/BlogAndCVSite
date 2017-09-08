@@ -55,8 +55,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <span class="cv-title">PHP / YII2</span>
                 <p>
                     Development extensive  <a href="https://github.com/NadineAstakhova/SystemOfIndividualWorks">web-system</a>,
-                    that interacts with the database and where the <span style="text-decoration: underline;">MVC</span>.
-                    Вdesign pattern was used. Large stack of web technologies used in this system, including
+                    that interacts with the database and where the <span style="text-decoration: underline;">MVC</span>
+                    design pattern was used. Large stack of web technologies used in this system, including
                     <span style="text-decoration: underline;">JS</span>,
                     <span style="text-decoration: underline;">HTML5</span>,
                     <span style="text-decoration: underline;">CSS3</span> и
