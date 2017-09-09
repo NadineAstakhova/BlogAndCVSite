@@ -32,7 +32,7 @@ $this->title = 'Nadine Astakhova';
                 <p>Hello, my name is Nadine. I am Junior Developer</p>
                 <p>The site was created with the purpose of additional practice</p>
                 <p>Here you can see my portfolio</p>
-                <p>And also you can read my thoughts on different things</p>
+                <p>If you have questions or offers, write me to nadine.astakhova@gmail.com</p>
             </div>
         </div>
     </div>
