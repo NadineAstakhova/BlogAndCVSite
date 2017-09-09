@@ -16,4 +16,5 @@ return [
     'Читать далее' => 'Read more',
     'Портфолио' => 'Portfolio',
     'Нет данных' => 'No data',
+    'Категории:' =>'Categories:'
 ];

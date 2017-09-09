@@ -19,6 +19,10 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -39,9 +43,8 @@ AppAsset::register($this);
         ['label' => Yii::t('app', 'Главная') , 'url' => ['/site/index']],
         ['label' => 'CV', 'url' => ['/site/cv']],
         ['label' => Yii::t('app', 'Портфолио'), 'url' => ['/site/portfolio']],
-        ['label' => Yii::t('app', 'Контакты'), 'url' => ['/site/contact']],
     ];
-    if (Yii::$app->user->isGuest) {
+    /*if (Yii::$app->user->isGuest) {
         //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
@@ -53,7 +56,7 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
-    }
+    }*/
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,
@@ -70,7 +73,9 @@ AppAsset::register($this);
     </div>
 
 </div>
-
+<div id="scroller" class="b-top" style="display: none;">
+    <i class="fa fa-arrow-up" aria-hidden="true" id="b-top-but"></i>
+</div>
 <footer class="footer">
     <div class="container">
         <p class="pull-right" style="padding-top: 13px">

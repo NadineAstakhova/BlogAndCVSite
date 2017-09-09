@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php Pjax::begin(); ?>
     <div class="col-lg-2" >
         <div class="categories-post">
-            <span class="categories-title">Categories:</span>
+            <span class="categories-title"><?=Yii::t('app', 'Категории:')?></span>
             <ul class="category-list">
                 <li>
                     <?= Html::a(
