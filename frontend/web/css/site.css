@@ -131,6 +131,14 @@
         color: #000;
     }
 
+    .p_title{
+        margin-bottom: 0px;
+    }
+
+    .text_j{
+        text-align: justify;
+    }
+
     @media(max-width: 1400px) {
        .site-image{
            width: 700px;
@@ -138,7 +146,7 @@
        }
         .site-timage{
             width: 650px;
-            height: 350px;
+            height: 380px;
         }
         .b-top{
             width:90%;
@@ -158,8 +166,8 @@
             height: 270px;
         }
         .site-timage{
-            width: 550px;
-            height: 300px;
+            width: 600px;
+            height: 370px;
         }
     }
     
@@ -191,7 +199,7 @@
         }
         .site-timage{
             width: 300px;
-            height: 200px;
+            height: 180px;
         }
         .b-top{
             width:90%;

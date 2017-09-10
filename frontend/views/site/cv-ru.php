@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
                      <h4>ОБРАЗОВАНИЕ</h4>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 col-xs-4" >
+                    <div class="col-lg-2 col-xs-4 col-sm-2" >
                         <?php
                         $url = Yii::$app->request->url;
 
@@ -36,11 +36,14 @@ $this->params['breadcrumbs'][] = $this->title;
                             echo " <img src=\"../images/donetsk_nu_herb.gif\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
                         ?>
                     </div>
-                    <div class="col-lg-6" >
-                        <span class="cv-title">Донецкий Национальнй Университет</span>
-                        <br>Бакалавр 2013-2017
+                    <div class="col-lg-9 col-xs-10 text_j">
+                        <span class="cv-title">Донецкий Национальнй Университет | 2013-2017</span>
                         <br>Физико-технический факультет
-                        <br>Компьютерные науки
+                        <br>Степень Бакалавра Компьютерных наук (с отличием)
+                        <hr>
+                        <span class="cv-title">Донецкий Национальнй Университет | 2017-2019</span>
+                        <br>Физико-технический факультет
+                        <br>Степень Магистра Компьютерных наук и информационных технологий
                     </div>
                 </div>
             </div>
@@ -53,7 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="cv-skills">
                 <h4>УМЕНИЯ И НАВЫКИ</h4>
                 <span class="cv-title">PHP / YII2</span>
-                <p>
+                <p class="text_j">
                     Разработка обширной <a href="https://github.com/NadineAstakhova/SystemOfIndividualWorks">веб-системы</a>
                     в рамках курсового проекта, которая взаимодействует с базой данных
                     и где используется шаблон проектирования <span style="text-decoration: underline;">MVC</span>.
@@ -66,25 +69,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 </p>
 
                 <span class="cv-title">JAVASCRIPT / NODE.JS</span>
-                <p>
+                <p class="text_j">
                     Применение технологий в разных по сложностям заданиях. В том числе небольшой опыт разработки
                     <span style="text-decoration: underline;">RESTful API</span> сервера на
                     <span style="text-decoration: underline;">Node.js</span>.
                 </p>
 
                 <span class="cv-title">MYSQL</span>
-                <p>
+                <p class="text_j">
                     Использование MySQL в курсовых работах и в более мелких приложениях.
                 </p>
 
                 <span class="cv-title">CORE JAVA / JAVA SE / ANDROID SDK </span>
-                <p>
+                <p class="text_j">
                     Разработка <a href="https://github.com/NadineAstakhova/SystemClient">Android-приложения</a> для курсового проекта, где приложение является клиентом для локального сервера,
                     который в свою очередь работает с сервером базы данных.
                 </p>
 
                 <span class="cv-title">C++ / QT / C# / WPF </span>
-                <p>
+                <p class="text_j">
                     В рамках нескольких курсов в моём университете изучаются эти технологии,
                     поэтому пока что основная часть практики — это лабораторные работы с использованием
                     <span style="text-decoration: underline;">ООП</span>,
@@ -125,7 +128,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-8" >
             <div class="cv-skills">
                 <h4>ОПЫТ РАБОТЫ</h4>
-                <span class="cv-title">Будет </span>
+                <span class="cv-title">Инженер-Разработчик</span> | Лето-осень 2017 | Донецкий Национальный Университет (Винница)
+                <p class="text_j">Руководителей кафедры заинтересовала мой курсовой проект, и они предложили доработать его для них. Мои
+                обязанности включают: разработка архитектуры, код, тестирование и немного дизайн. Я использовала PHP 5, Yii2,
+                    JavaScript, MySQL and GIT.</p>
             </div>
             <div  class="cv-but">
                 <?php
