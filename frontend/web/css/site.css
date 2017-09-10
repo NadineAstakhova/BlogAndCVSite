@@ -138,8 +138,14 @@
     .text_j{
         text-align: justify;
     }
+    .ptex{
+        text-align: center;
+    }
 
     @media(max-width: 1400px) {
+        .display-4 {
+            font-size: 2.6rem
+        }
        .site-image{
            width: 700px;
            height: 300px;
@@ -193,9 +199,12 @@
     }
 
     @media(max-width: 562px) {
+        .display-4 {
+            font-size: 1.6rem
+        }
         .site-image{
             width: 300px;
-            height: 200px;
+            height: 150px;
         }
         .site-timage{
             width: 300px;

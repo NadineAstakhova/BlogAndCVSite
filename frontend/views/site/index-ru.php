@@ -9,19 +9,8 @@ $this->title = 'Nadine Astakhova';
         <div class="col-lg-4">
             <?php
                 $url = Yii::$app->request->url;
-
                 $list_languages = \common\languages\Languages::$url_language;
-                //    http://portfolio/frontend/web/ru/site/login
-                preg_match("#^/(\w+/\w+)/($list_languages)(.*)#", $url, $match_arr);
-
-                Yii::trace('url', $url);
-                // Yii::trace('urlmatch', $match_arr[2]);
-                //if language exists in url
-                if ($match_arr[2] && $match_arr[2] != '/') {
-                    echo " <img src=\"../../images/profile-foto1.png\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
-                }
-                else
-                    echo " <img src=\"../images/profile-foto1.png\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
+                echo " <img src=\"https://nadineastalhova.000webhostapp.com/images/profile-foto1.png\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
             ?>
 
         </div>

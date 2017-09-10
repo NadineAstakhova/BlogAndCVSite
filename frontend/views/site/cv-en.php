@@ -21,19 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="col-lg-2 col-xs-4 col-sm-2" >
                         <?php
                         $url = Yii::$app->request->url;
-
                         $list_languages = \common\languages\Languages::$url_language;
-                        //    http://portfolio/frontend/web/ru/site/login
-                        preg_match("#^/(\w+/\w+)/($list_languages)(.*)#", $url, $match_arr);
-
-                        Yii::trace('url', $url);
-                        // Yii::trace('urlmatch', $match_arr[2]);
-                        //if language exists in url
-                        if ($match_arr[2] && $match_arr[2] != '/') {
-                            echo " <img src=\"../../images/donetsk_nu_herb.gif\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
-                        }
-                        else
-                            echo " <img src=\"../images/donetsk_nu_herb.gif\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
+                        echo " <img src=\"https://nadineastalhova.000webhostapp.com/images/donetsk_nu_herb.gif\" alt=\"donnu\" class=\"nk-img-stretch\" >";
                         ?>
                     </div>
                     <div class="col-lg-9 col-xs-10 text_j">
@@ -105,9 +94,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <li>Russian (Native)</li>
                     <li>Ukrainian (Native)</li>
                     <li>English (В1)
-                        <?php
-                            echo Html::a(Yii::t('app', 'Certificates'), ['download', 'name' => 'certificates_British_Council.pdf']);
-                        ?>
+                        <a href="https://nadineastalhova.000webhostapp.com/cv/certificates_British_Council.pdf">
+                            <?=Yii::t('app', 'Certificates')?></a>
                     </li>
                 </ul>
                 Also I can speak a little:
@@ -131,13 +119,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             </div>
             <div  class="cv-but">
-                <?php
-                    echo Html::a(Yii::t('app', 'Скачать Русское CV'), ['download', 'name' => 'CV_Nadine_Astakhova_Ru.pdf'],
-                        ['class' =>'download-cv']);
-
-                    echo Html::a(Yii::t('app', 'Download CV English'), ['download', 'name' => 'CV_Nadine_Astakhova.pdf'],
-                        ['class' =>'download-cv']);
-                ?>
+                <a href="https://nadineastalhova.000webhostapp.com/cv/CV_Nadine_Astakhova_Ru.pdf" class="download-cv">Скачать Русское CV</a>
+                <a href="https://nadineastalhova.000webhostapp.com/cv/CV_Nadine_Astakhova.pdf" class="download-cv">Download English CV</a>
             </div>
         </div>
     </div>
