@@ -73,9 +73,14 @@ AppAsset::register($this);
     </div>
 
 </div>
-<div id="scroller" class="b-top" style="display: none;">
-    <i class="fa fa-arrow-up" aria-hidden="true" id="b-top-but"></i>
-</div>
+
+<?php
+$url = Yii::$app->request->url;
+    if(strpos($url, "index") == false) {?>
+    <div id="scroller" class="b-top" style="display: none;">
+        <i class="fa fa-arrow-up" aria-hidden="true" id="b-top-but"></i>
+    </div>
+<?php }?>
 <footer class="footer">
     <div class="container">
         <p class="pull-right" style="padding-top: 13px">

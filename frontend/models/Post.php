@@ -38,7 +38,7 @@ class Post extends \yii\db\ActiveRecord
 
    public function init()
     {
-        $this->idPost = $this->_article->idPText;
+        $this->idPost = $this->_article['idPText'];
         $this->title = $this->_article['title'];
         $this->author =  $this->_article['author'];
         $this->text = $this->_article['text'];

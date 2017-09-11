@@ -39,6 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ['site/portfolio?filter=other']
                     ) ?>
                 </li>
+                <li><a href="https://github.com/NadineAstakhova"><?=Yii::t('app', 'Больше проектов')?></a></li>
             </ul>
         </div>
     </div>
@@ -48,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- START: Post -->
         <div class="nk-blog-post nk-blog-post-single">
 
-            <h2 class="display-4"><?php  echo $model->title; ?></h2>
+            <h2 class="display-4"><?php  echo $model->title; ?></h2 class="display-4">
 
             <div class="nk-post-meta">
                 <div class="nk-post-date"><?php echo $model->date;?></div>

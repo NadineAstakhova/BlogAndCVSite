@@ -131,14 +131,28 @@
         color: #000;
     }
 
+    .p_title{
+        margin-bottom: 0px;
+    }
+
+    .text_j{
+        text-align: justify;
+    }
+    .ptex{
+        text-align: center;
+    }
+
     @media(max-width: 1400px) {
+        .display-4 {
+            font-size: 2.6rem
+        }
        .site-image{
            width: 700px;
            height: 300px;
        }
         .site-timage{
             width: 650px;
-            height: 350px;
+            height: 380px;
         }
         .b-top{
             width:90%;
@@ -158,8 +172,8 @@
             height: 270px;
         }
         .site-timage{
-            width: 550px;
-            height: 300px;
+            width: 600px;
+            height: 370px;
         }
     }
     
@@ -185,13 +199,16 @@
     }
 
     @media(max-width: 562px) {
+        .display-4 {
+            font-size: 1.6rem
+        }
         .site-image{
             width: 300px;
-            height: 200px;
+            height: 150px;
         }
         .site-timage{
             width: 300px;
-            height: 200px;
+            height: 180px;
         }
         .b-top{
             width:90%;

@@ -57,6 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 ['portfolio']
                             ) ?>
                 </li>
+                <li><a href="https://github.com/NadineAstakhova"><?=Yii::t('app', 'Больше проектов')?></a></li>
             </ul>
 
         </div>
@@ -66,7 +67,6 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-1-cols">
 
             <!-- START: Post -->
-
 
                     <?php
                         if (count($posts) == 0)

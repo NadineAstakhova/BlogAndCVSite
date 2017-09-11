@@ -65,14 +65,10 @@ return [
                 '<lang:' . Languages::$url_language . '>/<controller>/<action>' => '<controller>/<action>',
                 '<lang:' . Languages::$url_language . '>/<controller>' => '<controller>',
 
-                '<lang:' . Languages::$url_language . '>/page-<page:\d+>/' => 'post/index',
-                '<lang:' . Languages::$url_language . '>/' => 'post/index',
+                '<lang:' . Languages::$url_language . '>/page-<page:\d+>/' => 'site/index',
+                '<lang:' . Languages::$url_language . '>/' => 'site/index',
 
-                [
-                    'pattern'=> '<lang:' . Languages::$url_language . '>/<url\w+>',
-                    'route' => 'post/view',
-                    'suffix' => '.html',
-                ],
+              
 
                // '<lang:' . Languages::$url_language . '>/<action:(contact|login|logout|language|about|signup)>' => 'site/login<action>',
             ],

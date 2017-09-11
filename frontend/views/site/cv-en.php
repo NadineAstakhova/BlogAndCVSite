@@ -18,29 +18,21 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h4>EDUCATION</h4>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 col-xs-4" >
+                    <div class="col-lg-2 col-xs-4 col-sm-2" >
                         <?php
                         $url = Yii::$app->request->url;
-
                         $list_languages = \common\languages\Languages::$url_language;
-                        //    http://portfolio/frontend/web/ru/site/login
-                        preg_match("#^/(\w+/\w+)/($list_languages)(.*)#", $url, $match_arr);
-
-                        Yii::trace('url', $url);
-                        // Yii::trace('urlmatch', $match_arr[2]);
-                        //if language exists in url
-                        if ($match_arr[2] && $match_arr[2] != '/') {
-                            echo " <img src=\"../../images/donetsk_nu_herb.gif\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
-                        }
-                        else
-                            echo " <img src=\"../images/donetsk_nu_herb.gif\" alt=\"фото профайла\" class=\"nk-img-stretch\" >";
+                        echo " <img src=\"https://nadineastalhova.000webhostapp.com/images/donetsk_nu_herb.gif\" alt=\"donnu\" class=\"nk-img-stretch\" >";
                         ?>
                     </div>
-                    <div class="col-lg-6" >
-                        <span class="cv-title">Donetsk National University </span>
-                        <br>Bachelor’s degree  2013-2017
+                    <div class="col-lg-9 col-xs-10 text_j">
+                        <span class="cv-title">Donetsk National University | 2013-2017</span>
                         <br>Faculty of Physics & Technology
-                        <br>Computer science
+                        <br>Bachelor’s degree in Computer science (with honors)
+                        <hr>
+                        <span class="cv-title">Donetsk National University | 2017-2019</span>
+                        <br>Faculty of Physics & Technology
+                        <br>Master’s degree in Computer science and Information technology
                     </div>
                 </div>
             </div>
@@ -53,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="cv-skills">
                 <h4>TECHNICAL SKILLS</h4>
                 <span class="cv-title">PHP / YII2</span>
-                <p>
+                <p class="text_j">
                     Development extensive  <a href="https://github.com/NadineAstakhova/SystemOfIndividualWorks">web-system</a>,
                     that interacts with the database and where the <span style="text-decoration: underline;">MVC</span>
                     design pattern was used. Large stack of web technologies used in this system, including
@@ -65,25 +57,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 </p>
 
                 <span class="cv-title">JAVASCRIPT / NODE.JS</span>
-                <p>
+                <p class="text_j">
                     Application of technologies in different tasks. Also I have a little experience in developing
                     <span style="text-decoration: underline;">RESTful API</span> server on
                     <span style="text-decoration: underline;">Node.js</span>.
                 </p>
 
                 <span class="cv-title">MYSQL</span>
-                <p>
+                <p class="text_j">
                     Using MySQL in coursework and in smaller applications.
                 </p>
 
                 <span class="cv-title">CORE JAVA / JAVA SE / ANDROID SDK </span>
-                <p>
+                <p class="text_j">
                     Development  <a href="https://github.com/NadineAstakhova/SystemClient">Android-application</a>
                     for a course project. The App is client for local server. This server works with the database server.
                 </p>
 
                 <span class="cv-title">C++ / QT / C# / WPF </span>
-                <p>
+                <p class="text_j">
                     As part of several courses at my university to study these technologies.
                     So for now the main part of the practice is labs using
                     <span style="text-decoration: underline;">OOP</span>.
@@ -102,9 +94,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <li>Russian (Native)</li>
                     <li>Ukrainian (Native)</li>
                     <li>English (В1)
-                        <?php
-                            echo Html::a(Yii::t('app', 'Certificates'), ['download', 'name' => 'certificates_British_Council.pdf']);
-                        ?>
+                        <a href="https://nadineastalhova.000webhostapp.com/cv/certificates_British_Council.pdf">
+                            <?=Yii::t('app', 'Certificates')?></a>
                     </li>
                 </ul>
                 Also I can speak a little:
@@ -122,16 +113,14 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-8" >
             <div class="cv-skills">
                 <h4>WORK EXPERIENCE</h4>
-                <span class="cv-title">Will be </span>
+                <span class="cv-title">Engineer-Developer</span> | Summer 2017 | Donetsk National University (Vinnytsia)
+                <p class="text_j"> Heads of dean's office interested in my web-system. So, they offered me to finalize it. My responsibilities are such development
+                   cycles: architecture, code, testing. Used PHP 5, Yii2, JavaScript, MySQL and GIT.</p>
+
             </div>
             <div  class="cv-but">
-                <?php
-                    echo Html::a(Yii::t('app', 'Скачать Русское CV'), ['download', 'name' => 'CV_Nadine_Astakhova_Ru.pdf'],
-                        ['class' =>'download-cv']);
-
-                    echo Html::a(Yii::t('app', 'Download CV English'), ['download', 'name' => 'CV_Nadine_Astakhova.pdf'],
-                        ['class' =>'download-cv']);
-                ?>
+                <a href="https://nadineastalhova.000webhostapp.com/cv/CV_Nadine_Astakhova_Ru.pdf" class="download-cv">Скачать Русское CV</a>
+                <a href="https://nadineastalhova.000webhostapp.com/cv/CV_Nadine_Astakhova.pdf" class="download-cv">Download English CV</a>
             </div>
         </div>
     </div>
